@@ -5,7 +5,7 @@ function enviarMensagem(event) {
     const nome = document.getElementById('nome').value
     const mensagem = document.getElementById('mensagem').value
     const email = document.getElementById('email').value
-    const telefone = '553599852XXXX'
+    const telefone = '5535998527737'
 
     const texto = `Olá, Me chamo ${nome}, ${mensagem}`
     const msgFormatada = encodeURIComponent(texto)
@@ -72,3 +72,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
