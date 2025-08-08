@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Mateus Amaral</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="fundo-particula"></div>
+
+    <header class="navegacao">
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="menu" id="menu">
+        <li><a class="menu-link" href="#inicio">Início</a></li>
+        <li><a class="menu-link" href="#projetos">Projetos</a></li>
+        <li><a class="menu-link" href="#contato">Contato</a></li>
+    </ul>
+</header>
+
+    <section id="inicio" class="inicio">
+        <img src="img/Mateus.webp" alt="Foto Perfil" class="foto-perfil">
+        <h1 class="titulo-principal">Mateus Amaral</h1>
+        <p class="subtitulo">Desenvolvedor Full Stack</p>
+    </section>
+
+    <section id="projetos" class="sobre">
+        <h2 class="titulo-secao">Projetos</h2>
+        <div class="caixa-sobre">
+            <p class="texto-sobre">Olá! Sou um desenvolvedor Full Stack apaixonado por criar experiências web únicas e
+                memoráveis. Combino código limpo com design moderno para desenvolver sites que não só funcionam
+                perfeitamente, mas também impressionam visualmente.</p>
+        </div>
+
+        <div class="caixa-projetos">
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                <div class="card-projeto">
+                    <img src="img/proj1.jpg" alt="Projeto 1" class="imagem-projeto">
+                    <div class="conteudo-projeto">
+                        <h3 class="titulo-projeto">Loja de carros</h3>
+                        <p class="descricao-projeto">Loja virtual moderna com animações suaves e design responsivo para
+                            uma loja de carros de luxo.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                <div class="card-projeto">
+                    <img src="img/proj2.jpg" alt="Projeto 2" class="imagem-projeto">
+                    <div class="conteudo-projeto">
+                        <h3 class="titulo-projeto">Página de viagens</h3>
+                        <p class="descricao-projeto">Uma página interativa com roteiro de viagem para os lugares mais
+                            cobiçados
+                            do mundo.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                <div class="card-projeto">
+                    <img src="img/proj3.jpg" alt="Projeto 3" class="imagem-projeto">
+                    <div class="conteudo-projeto">
+                        <h3 class="titulo-projeto">Microsoft</h3>
+                        <p class="descricao-projeto">Página réplica da Microsoft para demonstrar conhecimento em
+                            diversas
+                            ferramentas.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="contato" class="secao-contato">
+        <h2 class="titulo-secao">Entre em contato</h2>
+        <form class="formulario" onsubmit="enviarMensagem(event)">
+            <div class="grupo-formulario">
+                <input id="nome" type="text" class="campo-formulario" placeholder="Seu nome" required>
+            </div>
+            <div class="grupo-formulario">
+                <input id="email" type="email" class="campo-formulario" placeholder="Seu e-mail" required>
+            </div>
+            <div class="grupo-formulario">
+                <textarea id="mensagem" class="campo-formulario" placeholder="Sua mensagem" rows="4"
+                    required></textarea>
+            </div>
+            <button type="submit" class="botao-enviar">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <p>© 2025 Mateus Amaral - Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+    viewBox="0 0 24 24" width="24" height="24" >
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
