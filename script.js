@@ -1,18 +1,15 @@
 /* Função para enviar a mensagem via whatsapp */
-function enviarMensagem(event) {
-    event.preventDefault()
+function enviarMensagem(e) {
+  e.preventDefault();
 
-    const nome = document.getElementById('nome').value
-    const mensagem = document.getElementById('mensagem').value
-    const email = document.getElementById('email').value
-    const telefone = '5535998527737'
+  const nome = document.getElementById('nome').value.trim();
+  const mensagem = document.getElementById('mensagem').value.trim();
+  const telefone = '5535998527737';
 
-    const texto = `Olá, Me chamo ${nome}, ${mensagem}`
-    const msgFormatada = encodeURIComponent(texto)
+  const texto = `Olá, me chamo ${nome}. ${mensagem}`;
+  const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(texto)}`;
 
-    const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-
-    window.open(url, '_blank')
+  window.open(url, '_blank'); // ou: location.href = url;
 }
 
 const menuToggle = document.getElementById('menu-toggle');
@@ -72,4 +69,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
 
