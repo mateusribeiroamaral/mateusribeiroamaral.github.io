@@ -4,7 +4,7 @@ function enviarMensagem(e) {
 
   const nome = document.getElementById('nome').value.trim();
   const mensagem = document.getElementById('mensagem').value.trim();
-  const telefone = '5535998527737';
+  const telefone = '';
 
   const texto = `Olá, me chamo ${nome}. ${mensagem}`;
   const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(texto)}`;
@@ -69,5 +69,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
 
 
